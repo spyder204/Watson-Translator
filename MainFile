@@ -18,8 +18,8 @@ def click():  #this is where magic happens
 	toThis=toThis[-2:]
 	
 	translation = language_translator.translate(
-    text=w.get(),
-    model_id=fromThis+'-'+toThis).get_result()
+    	text=w.get(),
+    	model_id=fromThis+'-'+toThis).get_result()
 	tr=translation.get('translations')[0].get('translation')
 
 	mylab=Label(root, font=('cambria 17'), text=tr)
